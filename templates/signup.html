@@ -1,6 +1,25 @@
 {% extends "base.html" %}
 
 {% block body%}
+
+<style>
+
+    .signup_form{
+        margin-top: 5%;
+        margin-left: 45%;
+    }
+
+    .caption{
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 5%;
+    }
+
+</style>
+
+<h1 class="caption">Register</h1>
+
+<div class="signup_form">
 <form action="#" method="POST">
     <input type="email" name="ename" placeholder="Email:">
     <br>
@@ -13,4 +32,5 @@
     <br>
     <input type="submit">
 </form>
+</div>
 {% endblock %}
