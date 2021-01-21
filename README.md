@@ -1,1 +1,1 @@
-# bloggr
+# bloggr - Python/Flask project
