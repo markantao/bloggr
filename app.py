@@ -19,7 +19,10 @@ def signup():
     else:
         return render_template("signup.html")
     
-
+@app.route("/logout")
+def logout():
+    session.pop('user', None)
+    return redirect(url_for("home"))
 
 @app.route("/main")
 def main():
