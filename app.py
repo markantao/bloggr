@@ -26,7 +26,11 @@ def logout():
 
 @app.route("/main")
 def main():
-    return render_template("main.html")
+    if "user" in session:
+        return render_template("main.html")
+    else:
+        return render_template("home.html")
+
 
 @app.route("/user")
 def user():
