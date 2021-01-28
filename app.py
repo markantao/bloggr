@@ -40,6 +40,10 @@ def user():
     else:
         return redirect(url_for("signup"))
     
+@app.route("/blog")
+def blog():
+    if "user" in session:
+        return render_template("blogging.html")
 
 
     # return render_template("signup.html")
