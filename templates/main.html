@@ -1,5 +1,55 @@
 {% extends "base.html" %}
 
 {% block body %}
-<h1>Bloggr page</h1>
+<style>
+
+    .title{
+        text-align: center;
+    }
+
+    .category_choices{
+        text-align: center;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        grid-gap: 2em;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    .ca1{
+        grid-row: 2/6;
+        grid-column: 1/2;
+        background-color: #eee;
+    }
+
+    .ca2{
+        grid-row: 2/6;
+        grid-column: 2/3;
+        background-color: #eee;
+    }
+
+    .ca3{
+        grid-row: 2/6;
+        grid-column: 3/4;
+        background-color: #eee;
+    }
+
+
+
+
+</style>
+
+<h1 class="title">Bloggr page</h1>
+<hr>
+<h3 class="category_choices">Choose a Category to Blog About</h3>
+
+<div class="wrapper">
+    <div class="ca1">Category 1</div>
+    <div class="ca2">Category 2</div>
+    <div class="ca3">Category 3</div>
+</div>
 {% endblock %}
